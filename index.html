@@ -19,7 +19,7 @@
             color: white;
             background: #0d0812;
             display: grid;
-            grid-template-rows: 120px 1fr;
+            grid-template-rows: 80px 1fr;
         }
 
         nav {
@@ -39,7 +39,7 @@
             padding: 15px;
             text-align: center;
             font-family: 'Crimson Text', serif;
-            font-size: 2rem;
+            font-size: 1.5rem;
             box-shadow: 0 0 14px 2px black inset;
             background-color: #0f1013;
             transition: background-color .2s;
@@ -48,7 +48,7 @@
 
         @media screen and (min-width: 800px) {
             body {
-                grid-template-columns: minmax(min-content, 200px) 1fr;
+                grid-template-columns: minmax(min-content, 180px) 1fr;
             }
 
             nav {
@@ -56,6 +56,7 @@
             }
 
             nav button {
+                font-size: 2rem;
                 width: 100%;
             }
         }
@@ -132,7 +133,7 @@
 
         @media screen and (max-width: 649px) {
             .cards {
-                grid-auto-rows: minmax(200px, 60vh);
+                grid-auto-rows: minmax(200px, calc(100vh - 140px));
                 justify-items: center;
             }
 

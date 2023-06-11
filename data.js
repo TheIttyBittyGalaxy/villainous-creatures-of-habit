@@ -37,7 +37,7 @@ const data = [
             {
                 "heading": "Grabbing & Moving Items",
                 "body": [
-                    "Hamster, Helping Hand, and Yoink! are cards that let you Grab Items. When you Grab an Item, move it to the bottom of your board. That Item is now under your control. Ignore it's ability.",
+                    "Hamster, Helping Hand, and Yoink! are cards that let you Grab Items. When you Grab an Item, move it to the bottom of your board. That Item is now under your control. Ignore its ability.",
                     "Hamster, Shimmy, and Backpack are cards that help you to move Items. They can be used to move Items under you control, but also Items that are not under your control.",
                     "Note: Move an Item or Ally Actions cannot be used to move Items that are not under your control."
                 ]
@@ -45,7 +45,7 @@ const data = [
             {
                 "heading": "Hamsters",
                 "body": [
-                    "The Hamsters are very useful Allies for moving and Grabbing Items. Whenever a Hamster is moved, you may move it to any location in your realm. When you do, you can also move an Item from Hamster's old location to it's new one. In addition to this, you can Activate Hamster to Grab an Item at its location."
+                    "The Hamsters are very useful Allies for moving and Grabbing Items. Whenever a Hamster is moved, you may move it to any location in your realm. When you do, you can also move an Item from Hamster's old location to its new one. In addition to this, you can Activate Hamster to Grab an Item at its location."
                 ]
             },
             {
@@ -144,7 +144,7 @@ const data = [
             {
                 "name": "Helping Hand",
                 "kind": "Condition",
-                "ability": "During their turn, if another player has an Ally with strength 4 or more, you may play Helping Hand. Grab an Item at any location.",
+                "ability": "During their turn, if another player has an Ally with Strength 4 or more, you may play Helping Hand. Grab an Item at Jess' location.",
                 "copies": 2
             },
             {
@@ -249,7 +249,8 @@ const data = [
             {
                 "heading": "Actors",
                 "body": [
-                    "Actor is a card type unique to Eli. All Actors are also Allies. They are powerful cards that can all assist you in reaching your Objective. The four Actors are Travis, Winona, Ona, and Norah."
+                    "Actor is a card type unique to Eli. All Actors are also Allies. They are powerful cards that can all assist you in reaching your Objective. The four Actors are Travis, Winona, Ona, and Norah.",
+                    "You're On is a card that let's you find any Ally and put them in your hand, which can be a handy way to play the Actors you need early on."
                 ]
             },
             {
@@ -274,14 +275,14 @@ const data = [
             {
                 "heading": "Ona",
                 "body": [
-                    "Using an Activate action, you Ona allows you to take a card from your discard pile."
+                    "Using an Activate action, Ona lets you take a card from your discard pile."
                 ]
             },
             {
                 "heading": "Backstage Pass",
                 "body": [
-                    "Playing the Backstage Pass is vital for being able to use The Camera. When you play a Backstage Pass for the first time, unlock the Backstage by removing the Lock Token from the location. Backstage is now unlocked for the rest of the game",
-                    "Once you have played Backstage Pass, you may play an Actor and discard Backstage Pass instead of paying it's cost. This allows you to play Actors to your Realm at a reduced cost."
+                    "Playing the Backstage Pass is vital for being able to use the Camera. When you play a Backstage Pass for the first time, unlock the Backstage by removing the Lock Token from the location. Backstage is now unlocked for the rest of the game",
+                    "Once you have played Backstage Pass, you may play an Actor and discard Backstage Pass instead of paying the Actor's cost. This allows you to get Actors into your Realm using less Power."
                 ]
             },
             {
@@ -373,14 +374,15 @@ const data = [
             {
                 "name": "Manuscript",
                 "kind": "Item",
-                "ability": "When Manuscript is played, attach it to an Ally. That Ally gets +1 strength. When that Ally would be discarded, discard this Item instead.",
+                "ability": "When Manuscript is played, attach it to an Ally. That Ally gets +1 Strength. When that Ally would be discarded, discard this Item instead.",
                 "copies": 4,
-                "cost": 1
+                "cost": 1,
+                "strength": "+1"
             },
             {
                 "name": "Camera",
                 "kind": "Item",
-                "ability": "Camera can only be played to Backstage, even if it is locked./[Activate] Start the Camera rolling. At the start of you turn turn, the Camera will stop rolling.",
+                "ability": "Camera can only be played to Backstage, even if it is locked./[Activate] Start the Camera rolling. At the start of your next turn, the Camera will stop rolling.",
                 "cost": 6
             },
             {
@@ -433,7 +435,7 @@ const data = [
             {
                 "name": "Razzle Dazzle",
                 "kind": "Effect",
-                "ability": "Choose a Hero. That Hero gets -2 Strength until the end of your turn",
+                "ability": "Choose a Hero. That Hero gets -2 Strength until the end of your turn.",
                 "cost": 1,
                 "copies": 2
             }
@@ -468,7 +470,7 @@ const data = [
             {
                 "name": "Tourist",
                 "kind": "Hero",
-                "ability": "Tourist gains +2 strength for each Actor at their location.",
+                "ability": "Tourist gains +2 Strength for each Actor at their location.",
                 "strength": 2,
                 "copies": 2
             },
@@ -493,7 +495,7 @@ const data = [
             {
                 "name": "From the Top",
                 "kind": "Effect",
-                "ability": "Play an Effect from Eli's fate discard pile"
+                "ability": "Choose a location in Eli's realm. Move up to three Allies to that location."
             }
         ]
     },
@@ -508,7 +510,7 @@ const data = [
             {
                 "heading": "Moss' Objective",
                 "body": [
-                    "To achieve Moss' Objective, you must find and play Sunny to unlock Bristol Aquarium. Once you have, you must have at least one Ally at every location and then play Feed the Frogs. When you do, you will reveal and play the top card of your Fate deck. If after that the total Strength of all Heros in your realm is less than the total Strength of all Allies in your Realm, you win the game.",
+                    "To achieve Moss' Objective, you must find and play Sunny to unlock Bristol Aquarium. Once you have, you must have at least one Ally at every location and then play Feed the Frogs. When you do, you will reveal and play the top card of your Fate deck. If after that, the total Strength of all Heros in your realm is less than the total Strength of all Allies in your Realm, you win the game.",
                     "Beware: If Shark is revealed as part of Feed the Frogs, you cannot win the game."
                 ]
             },
@@ -521,7 +523,7 @@ const data = [
             {
                 "heading": "Amphibians Abound!",
                 "body": [
-                    "Moss has many Allies they can use to achieve their goal and Vanquish heros, including Big Frog, Little Guy, Poison Dart Frog, and Toad. The other Allies are Lizard and Sunny. You will need to make sure you have enough Allies to achieve your goal, but also to prevent your Heros from becoming unmanageable!"
+                    "Moss has many Allies they can use to achieve their goal and Vanquish Heros, including Big Frog, Little Guy, Poison Dart Frog, and Toad. The other Allies are Lizard and Sunny. You will need to make sure you have enough Allies to achieve your goal, but also to prevent your Heros from becoming unmanageable!"
                 ]
             },
             {
@@ -536,20 +538,20 @@ const data = [
                 "heading": "Sunny",
                 "body": [
                     "Playing Sunny is an important step in winning the game. When you play Sunny, unlock Bristol Aquarium by removing the Lock Token from the location. Bristol Aquarium is now unlocked for the rest of the game.",
-                    "Phone a Friend allows you to find a card from your deck or discard pile and put it in your hand. This can be a helpful way to find Sunny sooner."
+                    "Phone a Friend allows you to find an Ally from your deck or discard pile and put it in your hand. This can be a helpful way to find Sunny sooner."
                 ]
             },
             {
                 "heading": "X39",
                 "body": [
-                    "On each turn, X39 can move to an adjacent location before Moss moves. Whenever X39 moves, it can move an Ally from its old location to it's new one. Handy for moving Allies around your board! (Assuming X39 is where you need it to be...)",
+                    "On each turn, X39 can move to an adjacent location before Moss moves. Whenever X39 moves, it can move an Ally from its old location to its new one. Handy for moving Allies around your board! (Assuming X39 is where you need it to be...)",
                     "Note: X39 cannot be played or moved to Moss' Room."
                 ]
             }
         ],
         "locations": [
             {
-                "name": "Moss's Room",
+                "name": "Moss' Room",
                 "upper": "Play Card | Discard",
                 "lower": "Gain 2    | Fate   "
             },
@@ -682,9 +684,8 @@ const data = [
             {
                 "name": "Aquarium Transfer",
                 "kind": "Effect",
-                "ability": "Defeat a Hero with a Strength of 4 or less at Moss' location.",
-                "cost": 2,
-                "copies": 2
+                "ability": "Defeat a Hero with a Strength of 7 or less and move them to the bottom of your board. That Hero is now an Ally under your control.",
+                "cost": 4
             }
         ],
         "fate_deck": [
@@ -697,7 +698,7 @@ const data = [
             {
                 "name": "Octopus",
                 "kind": "Hero",
-                "ability": "When Octopus is played, you may move each Ally and Hero in Moss's realm to an adjacent location.",
+                "ability": "When Octopus is played, you may move each Ally and Hero in Moss' realm to an adjacent location.",
                 "strength": 6
             },
             {
@@ -715,18 +716,18 @@ const data = [
             {
                 "name": "Puffer Fish",
                 "kind": "Hero",
-                "ability": "If there is an Ally with a Strength of 2 or more at Puffer Fish's location, Puffer Fish gets +3 Strength.",
+                "ability": "If there is an Ally or Hero with a Strength of 3 or more at Puffer Fish's location, Puffer Fish gets +3 Strength.",
                 "strength": 2
             },
             {
                 "name": "Sunken Ship",
                 "kind": "Effect",
-                "ability": "Discard an Item in Moss's realm."
+                "ability": "Discard an Item in Moss' realm."
             },
             {
                 "name": "Sardines",
                 "kind": "Hero",
-                "ability": "When Sardines is played, find and play all Sardines in Moss' Fate deck and play them to the same location.",
+                "ability": "When Sardines is played, find all Sardines in Moss' Fate deck and play them to the same location. Shuffle Moss' Fate deck.",
                 "strength": 1,
                 "copies": 3
             },
@@ -747,7 +748,7 @@ const data = [
     },
     {
         "name": "Jamie",
-        "objective": "Start your turn with 10 strength in the painting pile.",
+        "objective": "Start your turn with 10 Strength in the Painting Pile.",
         "style": {
             "color": "#053a14",
             "border": "outset"
@@ -757,7 +758,7 @@ const data = [
                 "heading": "Jamie's Objective",
                 "body": [
                     "Jamie does not have a Vanquish action in their Realm. Instead, they paint pictures of Heros to defeat them. To do this, they must collect Paint and then Paint a Picture at the Hero's location.",
-                    "To achieve Jamie's Objective, you will need to play all three Supplies at least once, and then defeat heros totalling 10 or more Strength."
+                    "To achieve Jamie's Objective, you will need to play all three Supplies at least once, and then defeat Heros totalling 10 or more Strength."
                 ]
             },
             {
@@ -846,7 +847,7 @@ const data = [
             {
                 "name": "Watercolours",
                 "kind": "Supply",
-                "ability": "Gain 1 Paint for each Hero in your Realm.",
+                "ability": "Collect 1 Paint for each Hero in your Realm.",
                 "cost": 1,
                 "copies": 3
             },
@@ -860,7 +861,7 @@ const data = [
             {
                 "name": "Sketchbook",
                 "kind": "Supply",
-                "ability": "Gain 5 paint.",
+                "ability": "Collect 5 paint.",
                 "cost": 3
             },
             {
@@ -911,7 +912,7 @@ const data = [
             {
                 "name": "Paint Mixing",
                 "kind": "Effect",
-                "ability": "Gain up to 5 Paint. The cost to play Paint Mixing is equal to the amount of Paint gained.",
+                "ability": "Collect up to 5 Paint. The cost to play Paint Mixing is equal to the amount of Paint collected.",
                 "copies": 3,
                 "cost": "?"
             }
@@ -938,7 +939,7 @@ const data = [
             {
                 "name": "Badger",
                 "kind": "Hero",
-                "ability": "Badger gains +2 strength if there are other Heros at their location.",
+                "ability": "Badger gains +2 Strength if there are other Heros at their location.",
                 "strength": 3
             },
             {
@@ -968,8 +969,8 @@ const data = [
             {
                 "name": "Berries",
                 "kind": "Item",
-                "ability": "When Berries is played, attach it to a Hero. That Hero gets +1 strength.",
-                "strength": "+1",
+                "ability": "When Berries is played, attach it to a Hero. That Hero gets +2 Strength.",
+                "strength": "+2",
                 "copies": 3
             },
             {
@@ -986,7 +987,7 @@ const data = [
             {
                 "name": "Lifelike",
                 "kind": "Effect",
-                "ability": "Play a Hero with strength 3 or less from the Paint pile."
+                "ability": "Play a Hero with Strength 3 or less from the Painting Pile."
             }
         ]
     },
@@ -1119,7 +1120,7 @@ const data = [
             {
                 "name": "Watering Can",
                 "kind": "Item",
-                "ability": "At the end of each turn, each Plant at Watering Can's location gains 1 strength.",
+                "ability": "At the end of each turn, each Plant at Watering Can's location gains 1 Strength.",
                 "cost": 2,
                 "copies": 5
             },
@@ -1154,7 +1155,7 @@ const data = [
             {
                 "name": "Keen Eye",
                 "kind": "Effect",
-                "ability": "Choose a Plant. That plant gains +2 strength.",
+                "ability": "Choose a Plant. That plant gains +2 Strength.",
                 "cost": 0,
                 "copies": 3
             },
@@ -1167,7 +1168,7 @@ const data = [
             {
                 "name": "Not Dead Yet",
                 "kind": "Condition",
-                "ability": "During their turn, if another player defeats a Hero with strength 3 or more, you may play Not Dead Yet. Choose a Plant. That Plant gets +2 Strength.",
+                "ability": "During their turn, if another player defeats a Hero with Strength 3 or more, you may play Not Dead Yet. Choose a Plant. That Plant gets +2 Strength.",
                 "copies": 2
             },
             {
@@ -1188,7 +1189,7 @@ const data = [
             {
                 "name": "Creepy Crawlies",
                 "kind": "Hero",
-                "ability": "When Creepy Crawlies is played, all plants at its location loose -2 strength.",
+                "ability": "When Creepy Crawlies is played, all plants at its location loose -2 Strength.",
                 "strength": 2,
                 "copies": 2
             },
@@ -1216,7 +1217,7 @@ const data = [
             {
                 "name": "Mealybug",
                 "kind": "Item",
-                "ability": "When Mealybug is played, attach it to a Plant. That Plant has 0 strength./If a Vanquish action is performed at this location, discard Mealybug.",
+                "ability": "When Mealybug is played, attach it to a Plant. That Plant has 0 Strength./If a Vanquish action is performed at this location, discard Mealybug.",
                 "copies": 2
             },
             {

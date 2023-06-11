@@ -46,7 +46,7 @@ function setKeywordText(e, text) {
             if (capitalised.substr(-2) == "'s") {
                 capitalised = capitalised.slice(0, -2)
                 plural = true
-            } else if (",.!'".includes(capitalised.substr(-1))) {
+            } else if (")],.!'".includes(capitalised.substr(-1))) {
                 punctuation = capitalised.substr(-1);
                 capitalised = capitalised.slice(0, -1)
             }

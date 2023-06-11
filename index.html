@@ -130,6 +130,17 @@
             /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
         }
 
+        @media screen and (max-width: 649px) {
+            .cards {
+                grid-auto-rows: minmax(200px, 60vh);
+                justify-items: center;
+            }
+
+            .card {
+                height: 100%;
+            }
+        }
+
         @media screen and (min-width: 650px) {
             .cards {
                 grid-template-columns: 1fr 1fr;
@@ -159,10 +170,12 @@
             background: linear-gradient(0deg, var(--body-color) 0%, var(--body-color) 52%, #222 52%, #2d2d2d 100%);
         }
 
-        .deck-list {
-            width: fit-content;
-            column-count: 3;
-            column-width: 250px;
+        @media screen and (min-width: 800px) {
+            .deck-list {
+                width: fit-content;
+                column-count: 3;
+                column-width: 250px;
+            }
         }
 
         h1,

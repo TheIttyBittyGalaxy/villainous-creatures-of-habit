@@ -19,12 +19,12 @@
             color: white;
             background: #0d0812;
             display: grid;
-            grid-template-columns: min-content 1fr;
+            grid-template-rows: 120px 1fr;
         }
 
         nav {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             background-color: #0f1013;
         }
 
@@ -36,13 +36,28 @@
             color: inherit;
 
             --color: #053a14;
-            padding: 20px 40px;
+            padding: 15px;
             text-align: center;
             font-family: 'Crimson Text', serif;
             font-size: 2rem;
             box-shadow: 0 0 14px 2px black inset;
             background-color: #0f1013;
             transition: background-color .2s;
+            width: 20%;
+        }
+
+        @media screen and (min-width: 800px) {
+            body {
+                grid-template-columns: minmax(min-content, 200px) 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav button {
+                width: 100%;
+            }
         }
 
         nav button.selected,
@@ -75,6 +90,7 @@
             align-items: center;
             flex-direction: column;
             overflow: hidden;
+            text-align: center;
             /* background: linear-gradient(45deg,
                     #651460 0%,
                     #651460 20%,
@@ -89,11 +105,11 @@
         }
 
         div#splash img {
-            height: 40vh;
+            width: 80vw;
         }
 
         div#splash span {
-            font-size: 10vh;
+            font-size: 8vw;
             text-shadow: 0px 0px 12px #F6F64B, 1px 2px #fff8;
             font-weight: bold;
             font-family: 'Henny Penny', cursive;
@@ -110,7 +126,32 @@
         .cards {
             display: grid;
             gap: 20px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        }
+
+        @media screen and (min-width: 650px) {
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 920px) {
+            .cards {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 1120px) {
+            .cards {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 1320px) {
+            .cards {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
         }
 
         .card {
@@ -150,8 +191,16 @@
             font-size: 1.5rem;
         }
 
-        .villain-guide {
-            column-count: 3;
+        @media screen and (min-width: 800px) {
+            .villain-guide {
+                column-count: 2;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .villain-guide {
+                column-count: 3;
+            }
         }
 
         .villain-guide .objective {

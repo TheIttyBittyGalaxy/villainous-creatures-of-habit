@@ -644,7 +644,7 @@ const data = [
             {
                 "name": "Take a Chance",
                 "kind": "Effect",
-                "ability": "Choose either Item, Ally, or Effect. Shuffle your Discard pile and reveal up to 4 cards at random. Put all cards of the chosen kind into your hand. Discard the rest.",
+                "ability": "Choose either Item, Ally, or Effect. Shuffle your discard pile and reveal up to 4 cards at random. Put all cards of the chosen kind into your hand. Discard the rest.",
                 "cost": 3,
                 "copies": 2
             },
@@ -921,7 +921,7 @@ const data = [
             {
                 "name": "Bear",
                 "kind": "Hero",
-                "ability": "When Bear is played, Discard all Items from her location.",
+                "ability": "When Bear is played, discard all Items from her location.",
                 "strength": 6
             },
             {
@@ -1105,7 +1105,7 @@ const data = [
             {
                 "name": "Spider Plant",
                 "kind": "Plant",
-                "ability": "When a Hero is played to this location, J may move them to an adjacent location.",
+                "ability": "When a Hero is played or moved to this location, J may move them to an adjacent location.",
                 "cost": 3,
                 "strength": 2,
                 "copies": 2
@@ -1141,7 +1141,7 @@ const data = [
             {
                 "name": "Spring Clean",
                 "kind": "Effect",
-                "ability": "You may move up to 2 Items or Allies to an adjacent location.",
+                "ability": "You may move up to two Items or Allies to an adjacent location.",
                 "cost": 2,
                 "copies": 2
             },

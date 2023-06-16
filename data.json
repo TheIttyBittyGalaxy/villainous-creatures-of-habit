@@ -644,7 +644,7 @@
             {
                 "name": "Take a Chance",
                 "kind": "Effect",
-                "ability": "Choose either Item, Ally, or Effect. Shuffle your Discard pile and reveal up to 4 cards at random. Put all cards of the chosen kind into your hand. Discard the rest.",
+                "ability": "Choose either Item, Ally, or Effect. Shuffle your discard pile and reveal up to 4 cards at random. Put all cards of the chosen kind into your hand. Discard the rest.",
                 "cost": 3,
                 "copies": 2
             },
@@ -921,7 +921,7 @@
             {
                 "name": "Bear",
                 "kind": "Hero",
-                "ability": "When Bear is played, Discard all Items from her location.",
+                "ability": "When Bear is played, discard all Items from her location.",
                 "strength": 6
             },
             {

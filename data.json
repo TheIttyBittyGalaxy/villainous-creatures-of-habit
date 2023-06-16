@@ -780,7 +780,7 @@
                 "heading": "Paint a Picture",
                 "body": [
                     "When you play Paint a Picture, Jamie must be at the same location as the Hero being defeated.",
-                    "You must also pay Paint equal to the Hero's Strength, which may be modified by other cards in the Realm. Remove that many Paint from your board and return it to the Supply, and Defeat the chosen Hero.",
+                    "You must also pay Paint equal to the Hero's Strength, which may be modified by other cards in the Realm. Remove that many Paint from your board and return it to the Supply, and defeat the chosen Hero.",
                     "Note: If you do not have enough Paint to defeat a Hero, you may not play Paint a Picture."
                 ]
             },
@@ -945,7 +945,7 @@
             {
                 "name": "Frog",
                 "kind": "Hero",
-                "ability": "Jamie must Defeat Frog before defeating other Heros.",
+                "ability": "Jamie must defeat Frog before defeating other Heros.",
                 "strength": 2
             },
             {
@@ -1051,7 +1051,7 @@
             {
                 "heading": "Plushies",
                 "body": [
-                    "Plushie is a useful, as they allow to you defeat Heros without loosing Strength on your Plants. They are also useful for Defeating Heros that are too strong for your Plants",
+                    "Plushie is a useful, as they allow to you defeat Heros without loosing Strength on your Plants. They are also useful for defeating Heros that are too strong for your Plants",
                     "Tagliatelle is a powerful Ally to play as early as possible. On each turn, before you move your Villain, you may move Tagliatelle to any location and perform one action that is available at his new location.",
                     "Note: Tagliatelle may not perform Fate actions."
                 ]

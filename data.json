@@ -1105,7 +1105,7 @@
             {
                 "name": "Spider Plant",
                 "kind": "Plant",
-                "ability": "When a Hero is played to this location, J may move them to an adjacent location.",
+                "ability": "When a Hero is played or moved to this location, J may move them to an adjacent location.",
                 "cost": 3,
                 "strength": 2,
                 "copies": 2
@@ -1141,7 +1141,7 @@
             {
                 "name": "Spring Clean",
                 "kind": "Effect",
-                "ability": "You may move up to 2 Items or Allies to an adjacent location.",
+                "ability": "You may move up to two Items or Allies to an adjacent location.",
                 "cost": 2,
                 "copies": 2
             },

@@ -81,36 +81,15 @@ const data = [
             {
                 "name": "Yoink!",
                 "kind": "Effect",
-                "ability": "Grab an Item at Jess' location.",
-                "cost": 2,
+                "ability": "Choose an Item, Ally, or Effect from your discard pile and put it in your hand.",
+                "cost": 1,
                 "copies": 3
-            },
-            {
-                "name": "Yeet!",
-                "kind": "Effect",
-                "ability": "Discard an Item in Jess' Realm.",
-                "cost": 0,
-                "copies": 2
-            },
-            {
-                "name": "It's Here Somewhere",
-                "kind": "Effect",
-                "ability": "Choose an Item or Effect from your discard pile and put it in your hand.",
-                "cost": 2,
-                "copies": 3
-            },
-            {
-                "name": "Sneaky Peak",
-                "kind": "Effect",
-                "ability": "Choose one of your Fate decks. Look at all the cards. Shuffle and return them.",
-                "cost": 2,
-                "copies": 2
             },
             {
                 "name": "Rummage Around",
                 "kind": "Effect",
-                "ability": "Choose a Fate pile. Reveal cards from the top of the pile until you reveal an Item. Play that Item. Discard the rest.",
-                "cost": 0,
+                "ability": "Draw three cards into your hand, then discard any three cards.",
+                "cost": 1,
                 "copies": 3
             },
             {
@@ -123,11 +102,18 @@ const data = [
             {
                 "name": "Hamster",
                 "kind": "Ally",
-                "ability": "When Hamster is moved, you may move it to any location. You may move an item from its old location to its new location./[Activate] : Pay 1 Power. Grab an Item at Hamster's location.",
+                "ability": "When Hamster is moved, you may move an unattached Item from its old location to its new location./[Activate] : Pay 2 Power. Move Hamster to any location.",
                 "cost": 3,
                 "strength": 1,
                 "copies": 2,
                 "font": "small"
+            },
+            {
+                "name": "Keys",
+                "kind": "Item",
+                "ability": "When Jess moves, if Keys is at Jess' old location, you may move it to Jess' new location/[Activate] Move a lock token to an unlocked location.",
+                "cost": 1,
+                "copies": 2
             },
             {
                 "name": "Backpack",
@@ -138,68 +124,69 @@ const data = [
             {
                 "name": "Pretty Please",
                 "kind": "Condition",
-                "ability": "During their turn, if another player targets you with a Fate action, you may play Pretty Please. You choose which of your Fate decks they must draw from.",
+                "ability": "During their turn, if another player targets you with a Fate action, you may play Pretty Please. You may move a lock token to any unlocked location.",
                 "copies": 2
             },
             {
                 "name": "Helping Hand",
                 "kind": "Condition",
-                "ability": "During their turn, if another player has an Ally with Strength 4 or more, you may play Helping Hand. Grab an Item at Jess' location.",
+                "ability": "During their turn, if another player has an Ally with Strength 4 or more, you may play Helping Hand. Defeat a Hero with Strength 4 or less.",
                 "copies": 2
             },
             {
                 "name": "Shimmy",
                 "kind": "Effect",
-                "ability": "Move an Item or Ally to an adjacent location.",
-                "cost": 1,
-                "copies": 2
-            },
-            {
-                "name": "Foot Stool",
-                "kind": "Item",
-                "ability": "If Jess is at Foot Stool's location, you may perform actions that are covered at that location.",
-                "cost": 3
-            },
-            {
-                "name": "Todo list",
-                "kind": "Item",
-                "ability": "[Activate] Choose a Fate pile. Reveal cards from the top of the pile until you reveal an Item. Play that card. Discard the rest.",
-                "cost": 1,
-                "copies": 2
-            },
-            {
-                "name": "Deal with it Later",
-                "kind": "Effect",
-                "ability": "Choose a location. You may discard each Item at that location. Put the Fate discard pile into that location's Fate pile and shuffle it.",
+                "ability": "Move an Item or Ally to an adjacent location. You may ignore any lock tokens.",
                 "cost": 2,
                 "copies": 2
             },
             {
+                "name": "Crystal",
+                "kind": "Item",
+                "ability": "Crystal may only be played to Jess' location at the top of the board. When Crystal is moved to Jess' Room, move it to the bottom of the board.",
+                "cost": 3
+            },
+            {
+                "name": "Crystal",
+                "kind": "Item",
+                "ability": "Crystal may only be played to Jess' location at the top of the board. When Crystal is moved to The Lounge, move it to the bottom of the board.",
+                "cost": 3,
+                "copies": 2
+            },
+            {
+                "name": "Crystal",
+                "kind": "Item",
+                "ability": "Crystal may only be played to Jess' location at the top of the board. When Crystal is moved to The Gym, move it to the bottom of the board.",
+                "cost": 3,
+                "copies": 2
+            },
+            {
+                "name": "Crystal",
+                "kind": "Item",
+                "ability": "Crystal may only be played to Jess' location at the top of the board. When Crystal is moved to The Crystals Store, move it to the bottom of the board.",
+                "cost": 3
+            },
+            {
                 "name": "Shiny Rocks",
                 "kind": "Effect",
-                "ability": "Gain 2 Power for each location in your Realm that has a Crystal.",
-                "cost": 0,
+                "ability": "You may defeat one Hero at each location in your Realm with a Crystal. The cost to play Shiny Rocks is twice the number of Heros defeated.",
+                "cost": "?",
+                "copies": 2
+            },
+            {
+                "name": "Deal With it Later",
+                "kind": "Effect",
+                "ability": "You may move each Hero with a Strength of 4 or less to a locked location.",
+                "cost": 2,
                 "copies": 2
             }
         ],
         "fate_deck": [
             {
-                "name": "Trinket",
-                "kind": "Item",
-                "ability": "If Jess moves to Trinket's location, she immediately losses 1 power.",
-                "copies": 4
-            },
-            {
-                "name": "Laundry",
-                "kind": "Item",
-                "ability": "If Laundry is revealed during a Fate action, you may play both cards revealed during that action.",
-                "copies": 4
-            },
-            {
-                "name": "Crystal",
-                "kind": "Item",
-                "ability": "The cost to perform a Move an Item or Ally action is increased by 1 Power.",
-                "copies": 4
+                "name": "Lost Keys",
+                "kind": "Effect",
+                "ability": "Move a lock token to any unlocked location.",
+                "copies": 2
             },
             {
                 "name": "Appointment",
@@ -210,18 +197,63 @@ const data = [
             {
                 "name": "Demotivation",
                 "kind": "Effect",
-                "ability": "Jess looses 1 Power for each Item at this location.",
+                "ability": "Jess looses 1 Power for each Item in her Realm, up to 4 power.",
                 "copies": 2
             },
             {
-                "name": "Stuff of Nightmares",
+                "name": "Recurring Nightmare",
                 "kind": "Effect",
-                "ability": "Discard an Item or Ally from Jess' Realm."
+                "ability": "Play an Hero with a strength of 4 or less from Jess' Fate discard pile."
             },
             {
-                "name": "Guitar",
-                "kind": "Item",
-                "ability": "Other Items at Guitar's location cannot be moved."
+                "name": "The Watcher",
+                "kind": "Hero",
+                "ability": "Jess cannot perform Move an Item or Ally actions./If The Watcher's location is locked, The Watcher is defeated.",
+                "strength": 8
+            },
+            {
+                "name": "Murder Clown",
+                "kind": "Hero",
+                "ability": "When Murder Clown is played, add a new lock token to an unlocked location in Jess' Realm./If Murder Clown's location is locked, Murder Clown is defeated. Remove the lock token from their location.",
+                "strength": 8,
+                "font": "small"
+            },
+            {
+                "name": "Disembodied Claws",
+                "kind": "Hero",
+                "ability": "Jess cannot move Allies./If there are two or more Crystals at this location, Disembodied Claws is defeated.",
+                "strength": 4
+            },
+            {
+                "name": "Paralysis Demon",
+                "kind": "Hero",
+                "ability": "Jess cannot move Items at Paralysis Demon's location./If there are two or more Crystals at this location, Paralysis Demon is defeated.",
+                "strength": 4
+            },
+            {
+                "name": "I Don't Know You",
+                "kind": "Hero",
+                "ability": "When I Don't Know You is played, you may move a lock token to any unlocked location./[Activate] Defeat I Don't Know You.",
+                "strength": 3
+            },
+            {
+                "name": "That Face, So Familiar",
+                "kind": "Hero",
+                "ability": "If That Face, So Familiar is revealed during a Fate action, you may play both cards revealed during that action./[Activate] Defeat That Face, So Familiar.",
+                "strength": 3,
+                "font": "small"
+            },
+            {
+                "name": "Brain Goblin",
+                "kind": "Hero",
+                "ability": "When Brain Goblin is played, choose a location. Move up to two Items to that location./[Activate] Defeat Brain Goblin.",
+                "strength": 2
+            },
+            {
+                "name": "Brain Frog",
+                "kind": "Hero",
+                "ability": "When Brain Fog is played, you may shuffle Jess' discard pile into her deck./[Activate] Defeat Brain Fog.",
+                "strength": 2
             }
         ]
     },
@@ -575,7 +607,7 @@ const data = [
             {
                 "name": "X39",
                 "kind": "Item",
-                "ability": "X39 cannot be moved to played to Moss' Room./Before Moss moves, you may move X39 to an adjacent location./When X39 is moved, you may move an Ally from its old location to its new location.",
+                "ability": "X39 cannot be moved or played to Moss' Room./Before Moss moves, you may move X39 to an adjacent location./When X39 is moved, you may move an Ally from its old location to its new location.",
                 "cost": 3,
                 "font": "small"
             },
@@ -592,16 +624,14 @@ const data = [
                 "kind": "Ally",
                 "ability": "When performing a Vanquish action, Big Frog may be used to defeat a Hero at their location or an adjacent location.",
                 "strength": 3,
-                "cost": 3,
-                "copies": 3
+                "cost": 3
             },
             {
                 "name": "Poison Dart Frog",
                 "kind": "Ally",
                 "ability": "All Heros at Poison Dart Frog's location get -1 Strength.",
                 "strength": 2,
-                "cost": 2,
-                "copies": 2
+                "cost": 2
             },
             {
                 "name": "Toad",
@@ -628,7 +658,7 @@ const data = [
             {
                 "name": "Feed the Frogs",
                 "kind": "Effect",
-                "ability": "If there is an Ally at each location, reveal and play the top card of your Fate deck. If the total Strength of all Heros in your Realm is less than the total Strength of all Allies in your Realm, you win the game. If not, gain 3 Power.",
+                "ability": "If there is an Ally at each location, roll a d4 for each Ally and Hero in your realm. If the total dice roll is less than the total Strength of all Allies in your Realm, you win the game. If not, gain 3 Power.",
                 "cost": 4,
                 "copies": 3,
                 "font": "small"
@@ -651,8 +681,19 @@ const data = [
             {
                 "name": "Gotcha!",
                 "kind": "Effect",
-                "ability": "Defeat a Hero with a Strength of 4 or less and move them to the bottom of your board. That Hero is now an Ally under your control. The cost to play Gotcha! is half the Hero's Strength rounded up.",
-                "cost": "?",
+                "ability": "Roll a d6. Defeat a Hero with a Strength of the amount rolled or less and move them to the bottom of your board. That Hero is now an Ally under your control.",
+                "cost": 2,
+                "copies": 3
+            },
+            {
+                "kind": "Item",
+                "ability": "If Moss is at this location, you may make dice rolls with advantage.",
+                "cost": 2
+            },
+            {
+                "kind": "Effect",
+                "ability": "Roll a d4. Gain that much power",
+                "cost": 0,
                 "copies": 3
             },
             {
